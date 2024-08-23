@@ -13,3 +13,11 @@ let markMass = 78;
 let markHeight = 1.69;
 let johnMass = 92;
 let johnHeight = 1.95;
+
+const getBMI = (mass, height) => mass / height ** 2;
+
+let markBMI = getBMI(markMass, markHeight);
+let johnBMI = getBMI(johnMass, johnHeight);
+
+console.log("Mark's BMI: " + markBMI);
+console.log("John's BMI: " + johnBMI);
