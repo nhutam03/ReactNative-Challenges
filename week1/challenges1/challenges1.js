@@ -21,3 +21,6 @@ let johnBMI = getBMI(johnMass, johnHeight);
 
 console.log("Mark's BMI: " + markBMI);
 console.log("John's BMI: " + johnBMI);
+
+let markHigherBMI = markBMI > johnBMI;
+console.log("Is Mark's BMI higher than John's? " + markHigherBMI);
