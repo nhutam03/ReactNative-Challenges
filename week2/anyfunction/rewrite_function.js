@@ -19,3 +19,15 @@ let arr4 = [
 ];
 let arr5 = arr4.flat();
 console.log(arr5); // [1, 2, 3, 4, 5, 6]
+//any -> kiem tra xem co phan tu nao theo dieu kien khong -> true/false
+let hasAny = arr.some((value, index) => value > 10);
+console.log(hasAny); // true
+//some -> kiem tra xem it nhat mot phan tu theo dieu kien -> true/false
+let all = arr.some((value, index) => value > 10);
+console.log(all); // true
+//flatmap -> lam phang mang va tao ra mang moi tu mang cu
+let arr6 = arr4.flatMap((value, index) => value.map((v, i) => v + 1));
+console.log(arr6); // [2, 3, 4, 5, 6, 7]
+//every -> kiem tra xem tat ca phan tu theo dieu kien -> true/false
+let all2 = arr.every((value, index) => value > 10);
+console.log(all2); // false
