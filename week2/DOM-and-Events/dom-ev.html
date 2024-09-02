@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Guess Number</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      display: grid;
+      margin-top: 20px;
+      
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width:auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .number {
+      font-size: 6rem;
+      font-weight: bold;
+      margin: 20px 0;
+      height: 10rem;
+      background-color: #eee;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .check, .again {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .right {
+      text-align: center;
+      
+    }
+
+    .message {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    .label-score,
+    .label-highscore {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Guess Number</h1>
+    <p>Guess a number between 1 and 20</p>
+    <button class="again">Again!</button>
+    <div class="number">?</div>
+  </header>
+  <main>
+    <section class="left">
+      <input type="number" class="guess" placeholder="Enter your guess">
+      <button class="check">Check!</button>
+    </section>
+    <section class="right">
+      <p class="message">Start guessing...</p>
+      <p class="label-score">💯 Score: <span class="score">20</span></p>
+      <p class="label-highscore">🥇 Highscore: <span class="highscore">0</span></p>
+    </section>
+  </main>
+  <script src='dom-ev.js'></script>
+</body>
+
+</html>
